@@ -29,7 +29,7 @@ const renderContact = (homelink, menulink, contactlink) => {
   li4.textContent = 'Home';
 
   const clean = () => {
-    header.remove();
+    wrap.remove();
   };
 
   li3.addEventListener('click', () => {
