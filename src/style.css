@@ -8,6 +8,7 @@
 #content {
   display: flex;
   flex-direction: column;
+  background-color: #fafafa;
 }
 
 header {
@@ -26,6 +27,12 @@ header ul {
 
 header li {
   margin-left: 60px;
+}
+
+header li:hover {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 header button {
@@ -85,4 +92,84 @@ main {
 .wraptop {
   background-image: url(../src/background6.png);
   background-size: cover;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  color: #434343;
+  padding: 0 200px 50px ;
+  align-items: center;
+}
+
+.menu-desc {
+  margin: 50px 0;
+  border-bottom: 10px #f5a00f solid;
+  padding-bottom: 20px;
+}
+
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menuitem {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  width: 22%;
+  border-top-right-radius: 50px;
+}
+
+.item-img {
+  border-top-right-radius: 50px;
+  background-color: #f5a00f;
+  border-bottom-left-radius: 50px;
+}
+
+.item-img img {
+  width: 100%;
+}
+
+.item-desc {
+  display: flex;
+  flex-direction: column;
+  height: 220px;
+  padding-top: 20px;
+  justify-content: space-between;
+  box-shadow: 11px 15px 37px -11px rgba(143, 143, 143, 0.76)
+}
+
+.menu-price {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.item-desc span {
+  padding: 10px;
+}
+
+.item-cal {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  align-items: center;
+}
+
+.add-item {
+  border-top-left-radius: 10px;
+  background-color: #f5a00f;
+  color: white;
+  width: 90px;
+  font-size: 50px;
+  height: 60px;
+  text-align: center;
+}
+
+.add-item:hover {
+  cursor: pointer;
 }
