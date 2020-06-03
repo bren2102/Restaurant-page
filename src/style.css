@@ -43,8 +43,18 @@ header button {
   padding: 15px;
 }
 
+header h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 main {
   display: flex;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 .left {
@@ -172,4 +182,101 @@ main {
 
 .add-item:hover {
   cursor: pointer;
+}
+
+.box {
+  background-color: #fafafa;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 200px;
+}
+
+.box-desc {
+  border-top-right-radius: 50px;
+  background-color: white;
+  border-bottom-left-radius: 50px;
+  box-shadow: 11px 15px 37px -11px rgba(143, 143, 143, 0.76);
+  width: 25%;
+  height: 170px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.box-desc span {
+  color: #717171;
+}
+
+.wrap {
+  background-color: #fafafa;
+  background-image: url(../src/background6.png);
+  background-size: cover;
+  height: 550px;
+}
+
+.contact {
+  display: flex;
+}
+
+.left-contact img {
+  width: 100%;
+}
+
+.left-contact {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.form-contact {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 200px;
+  color: #434343;
+  text-align: center;
+}
+
+.form-contact > * {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-contact div :first-child {
+  width: 80px;
+  text-align: left;
+  margin-right: 15px;
+}
+
+
+.form-contact input {
+  width: 100%;
+  margin: 15px 0;
+  border: 1px solid #434343da;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.form-text input {
+  height: 350px;
+}
+
+.contact button {
+  background-color: #f5a00f;
+  color: white;
+  font-size: 20px;
+  border-radius: 35px;
+  border: none;
+  padding: 15px;
+  width: 300px;
+  margin-top: 30px;
 }

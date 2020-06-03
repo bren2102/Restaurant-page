@@ -1,3 +1,5 @@
+import burgerimg from '../src/burgers.png';
+
 const renderHome = (homelink, menulink, contactlink) => {
   const content = document.querySelector('#content');
 
@@ -23,7 +25,7 @@ const renderHome = (homelink, menulink, contactlink) => {
   ul.appendChild(li4);
   li1.appendChild(btn);
 
-  h2_header.textContent = 'Burgie';
+  h2_header.innerHTML = `<span class="iconify" data-inline="false" data-icon="openmoji:hamburger" style="font-size: 30px;"></span> Burgie`;
   btn.textContent = 'Booking now';
   li2.textContent = 'Contact us';
   li3.textContent = 'Menu';
@@ -31,6 +33,7 @@ const renderHome = (homelink, menulink, contactlink) => {
 
   const clean = () => {
     wraptop.remove();
+    box.remove();
   };
 
   li3.addEventListener('click', () => {
@@ -38,6 +41,10 @@ const renderHome = (homelink, menulink, contactlink) => {
     menulink(homelink, menulink, contactlink);
   });
 
+  li2.addEventListener('click', () => {
+    clean();
+    contactlink(homelink, menulink, contactlink);
+  });
   li4.style.fontSize = '20px';
   li4.style.fontWeight = 'bold';
 
@@ -64,7 +71,32 @@ const renderHome = (homelink, menulink, contactlink) => {
               Fresh`;
   span_main.textContent = 'Delicious and fast service';
   btn_main.textContent = 'Order now';
-  burger.src = '../src/burgers.png';
+  burger.src = burgerimg;
+
+  const box = document.createElement('div');
+  const box_desc1 = document.createElement('div');
+  const box_desc2 = document.createElement('div');
+  const box_desc3 = document.createElement('div');
+
+  box.classList.add('box');
+  content.appendChild(box);
+
+  box_desc1.classList.add('box-desc');
+  box.appendChild(box_desc1);
+  box_desc2.classList.add('box-desc');
+  box.appendChild(box_desc2);
+  box_desc3.classList.add('box-desc');
+  box.appendChild(box_desc3);
+
+  box_desc1.innerHTML = `<span class="iconify" data-inline="false" data-icon="bi:clock-fill" style="color: #F5A00F; font-size: 40px;"></span>
+        <h2>Today 10:00 - 19:00</h2>
+        <span>Working hours</span>`
+  box_desc2.innerHTML = `<span class="iconify" data-inline="false" data-icon="vaadin:location-arrow-circle" style="color: #F5A00F; font-size: 40px;"></span>
+        <h2>Velyka Vasylksiva 100</h2>
+        <span>Get directions</span>`
+  box_desc3.innerHTML = `<span class="iconify" data-inline="false" data-icon="el:phone-alt" style="color: #F5A00F; font-size: 40px;"></span>
+        <h2>+38 (068) 833 24 15</h2>
+        <span>Call Online</span>`
 }
 
 export default (renderHome);

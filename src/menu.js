@@ -1,3 +1,10 @@
+import burger2 from "../src/burger2.png";
+import burger3 from "../src/burger3.png";
+import burger4 from "../src/burger4.png";
+import burger5 from "../src/burger5.png";
+import burger6 from "../src/burger6.png";
+import burger7 from "../src/burger7.png";
+
 const renderMenu = (homelink, menulink, contactlink) => {
   const content = document.querySelector('#content');
 
@@ -19,7 +26,7 @@ const renderMenu = (homelink, menulink, contactlink) => {
   ul.appendChild(li4);
   li1.appendChild(btn);
 
-  h2_header.textContent = 'Burgie';
+  h2_header.innerHTML = `<span class="iconify" data-inline="false" data-icon="openmoji:hamburger" style="font-size: 30px;"></span> Burgie`;
   btn.textContent = 'Booking now';
   li2.textContent = 'Contact us';
   li3.textContent = 'Menu';
@@ -33,6 +40,11 @@ const renderMenu = (homelink, menulink, contactlink) => {
   li4.addEventListener('click', () => {
     clean();
     homelink(homelink, menulink, contactlink);
+  });
+
+  li2.addEventListener('click', () => {
+    clean();
+    contactlink(homelink, menulink, contactlink);
   });
 
   li3.style.fontSize = '20px';
@@ -76,168 +88,138 @@ const renderMenu = (homelink, menulink, contactlink) => {
   menu_list.appendChild(menuitem6);
 
   menuitem1.innerHTML = `<div class="item-img">
-              <img src="../src/burger2.png" alt="">
+              <img src="${burger2}" alt="">
             </div>
             <div class="item-desc">
               <div class="menu-price">
-                <h2>Burger #1</h2>
-                <h2>10$</h2>
+                <h2>Holy Chunk</h2>
+                <h2>12$</h2>
               </div>
               <span>
-                Description of the burger and what you'll get
+                Burgie master tops creations with a faintly sweet 'special sauce' for singularity tasty results 
               </span>
               <div class="item-cal">
                 <div class="menu-calification">
-                  <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"
-                    style="color: #F5A00F; font-size: 20px;"></span>
-                  <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"
-                    style="color: #F5A00F; font-size: 20px;"></span>
-                  <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"
-                    style="color: #F5A00F; font-size: 20px;"></span>
-                  <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"
-                    style="color: #F5A00F; font-size: 20px;"></span>
-                  <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"
-                    style="color: #F5A00F; font-size: 20px;"></span>
+                  <span class="iconify" data-inline="false" data-icon="bi:star-fill" style="color: #F5A00F; font-size: 20px;"></span>
+                  <span class="iconify" data-inline="false" data-icon="bi:star-fill" style="color: #F5A00F; font-size: 20px;"></span>
+                  <span class="iconify" data-inline="false" data-icon="bi:star-fill" style="color: #F5A00F; font-size: 20px;"></span>
+                  <span class="iconify" data-inline="false" data-icon="bi:star-fill" style="color: #F5A00F; font-size: 20px;"></span>
+                  <span class="iconify" data-inline="false" data-icon="bi:star-fill" style="color: #F5A00F; font-size: 20px;"></span>
                 </div>
                 <div class="add-item"> + </div>
               </div>
             </div>`;
 
   menuitem2.innerHTML = `<div class="item-img">
-            <img src="../src/burger3.png" alt="">
+            <img src = "${burger3}" alt = "">
           </div>
           <div class="item-desc">
             <div class="menu-price">
-              <h2>Burger #1</h2>
+              <h2>Origin</h2>
               <h2>10$</h2>
             </div>
             <span>
-              Description of the burger and what you'll get
+              Burgie master tops creations with a faintly sweet 'special sauce' for singularity tasty results
             </span>
             <div class="item-cal">
               <div class="menu-calification">
-                <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"
-                  style="color: #F5A00F; font-size: 20px;"></span>
-                <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"
-                  style="color: #F5A00F; font-size: 20px;"></span>
-                <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"
-                  style="color: #F5A00F; font-size: 20px;"></span>
-                <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"
-                  style="color: #F5A00F; font-size: 20px;"></span>
-                <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"
-                  style="color: #F5A00F; font-size: 20px;"></span>
+                <span class="iconify" data-inline="false" data-icon="bi:star-fill" style="color: #F5A00F; font-size: 20px;"></span>
+                <span class="iconify" data-inline="false" data-icon="bi:star-fill" style="color: #F5A00F; font-size: 20px;"></span>
+                <span class="iconify" data-inline="false" data-icon="bi:star-fill" style="color: #F5A00F; font-size: 20px;"></span>
+                <span class="iconify" data-inline="false" data-icon="bi:star-fill" style="color: #F5A00F; font-size: 20px;"></span>
+                <span class="iconify" data-inline="false" data-icon="bi:star-half" style="color: #F5A00F; font-size: 20px;"></span>
               </div>
               <div class="add-item"> + </div>
             </div>
           </div>`
 
 menuitem3.innerHTML = `<div class="item-img">
-            <img src="../src/burger4.png" alt="">
+            <img src = "${burger4}" alt = "">
           </div>
           <div class="item-desc">
             <div class="menu-price">
-              <h2>Burger #1</h2>
-              <h2>10$</h2>
+              <h2>The Country General</h2>
+              <h2>11$</h2>
             </div>
             <span>
-              Description of the burger and what you'll get
+              Burgie master tops creations with a faintly sweet 'special sauce' for singularity tasty result
             </span>
             <div class="item-cal">
               <div class="menu-calification">
-                <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"
-                  style="color: #F5A00F; font-size: 20px;"></span>
-                <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"
-                  style="color: #F5A00F; font-size: 20px;"></span>
-                <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"
-                  style="color: #F5A00F; font-size: 20px;"></span>
-                <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"
-                  style="color: #F5A00F; font-size: 20px;"></span>
-                <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"
-                  style="color: #F5A00F; font-size: 20px;"></span>
+                <span class="iconify" data-inline="false" data-icon="bi:star-fill" style="color: #F5A00F; font-size: 20px;"></span>
+                <span class="iconify" data-inline="false" data-icon="bi:star-fill" style="color: #F5A00F; font-size: 20px;"></span>
+                <span class="iconify" data-inline="false" data-icon="bi:star-fill" style="color: #F5A00F; font-size: 20px;"></span>
+                <span class="iconify" data-inline="false" data-icon="bi:star-fill" style="color: #F5A00F; font-size: 20px;"></span>
+                <span class="iconify" data-inline="false" data-icon="bi:star-fill" style="color: #F5A00F; font-size: 20px;"></span>
               </div>
               <div class="add-item"> + </div>
             </div>
           </div>`;
 
 menuitem4.innerHTML = `<div class="item-img">
-            <img src="../src/burger5.png" alt="">
+            <img src = "${burger5}" alt = "">
           </div>
           <div class="item-desc">
             <div class="menu-price">
-              <h2>Burger #1</h2>
-              <h2>10$</h2>
+              <h2>Golden Star</h2>
+              <h2>9$</h2>
             </div>
             <span>
-              Description of the burger and what you'll get
+              Burgie master tops creations with a faintly sweet 'special sauce' for singularity tasty results
             </span>
             <div class="item-cal">
               <div class="menu-calification">
-                <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"
-                  style="color: #F5A00F; font-size: 20px;"></span>
-                <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"
-                  style="color: #F5A00F; font-size: 20px;"></span>
-                <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"
-                  style="color: #F5A00F; font-size: 20px;"></span>
-                <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"
-                  style="color: #F5A00F; font-size: 20px;"></span>
-                <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"
-                  style="color: #F5A00F; font-size: 20px;"></span>
+                <span class="iconify" data-inline="false" data-icon="bi:star-fill" style="color: #F5A00F; font-size: 20px;"></span>
+                <span class="iconify" data-inline="false" data-icon="bi:star-fill" style="color: #F5A00F; font-size: 20px;"></span>
+                <span class="iconify" data-inline="false" data-icon="bi:star-fill" style="color: #F5A00F; font-size: 20px;"></span>
+                <span class="iconify" data-inline="false" data-icon="bi:star-fill" style="color: #F5A00F; font-size: 20px;"></span>
+                <span class="iconify" data-inline="false" data-icon="bi:star-half" style="color: #F5A00F; font-size: 20px;"></span>
               </div>
               <div class="add-item"> + </div>
             </div>
           </div>`;
 
 menuitem5.innerHTML = `<div class="item-img">
-            <img src="../src/burger6.png" alt="">
+            <img src = "${burger6}" alt = "">
           </div>
           <div class="item-desc">
             <div class="menu-price">
-              <h2>Burger #1</h2>
+              <h2>The Stockyard</h2>
               <h2>10$</h2>
             </div>
             <span>
-              Description of the burger and what you'll get
+              Burgie master tops creations with a faintly sweet 'special sauce' for singularity tasty results
             </span>
             <div class="item-cal">
               <div class="menu-calification">
-                <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"
-                  style="color: #F5A00F; font-size: 20px;"></span>
-                <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"
-                  style="color: #F5A00F; font-size: 20px;"></span>
-                <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"
-                  style="color: #F5A00F; font-size: 20px;"></span>
-                <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"
-                  style="color: #F5A00F; font-size: 20px;"></span>
-                <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"
-                  style="color: #F5A00F; font-size: 20px;"></span>
+                <span class="iconify" data-inline="false" data-icon="bi:star-fill" style="color: #F5A00F; font-size: 20px;"></span>
+                <span class="iconify" data-inline="false" data-icon="bi:star-fill" style="color: #F5A00F; font-size: 20px;"></span>
+                <span class="iconify" data-inline="false" data-icon="bi:star-fill" style="color: #F5A00F; font-size: 20px;"></span>
+                <span class="iconify" data-inline="false" data-icon="bi:star-fill" style="color: #F5A00F; font-size: 20px;"></span>
+                <span class="iconify" data-inline="false" data-icon="bi:star-fill" style="color: #F5A00F; font-size: 20px;"></span>
               </div>
               <div class="add-item"> + </div>
             </div>
           </div>`;
 
 menuitem6.innerHTML = `<div class="item-img">
-            <img src="../src/burger7.png" alt="">
+            <img src = "${burger7}" alt = "">
           </div>
           <div class="item-desc">
             <div class="menu-price">
-              <h2>Burger #1</h2>
-              <h2>10$</h2>
+              <h2>Blue Plate</h2>
+              <h2>9$</h2>
             </div>
             <span>
-              Description of the burger and what you'll get
+              Burgie master tops creations with a faintly sweet 'special sauce' for singularity tasty results
             </span>
             <div class="item-cal">
               <div class="menu-calification">
-                <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"
-                  style="color: #F5A00F; font-size: 20px;"></span>
-                <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"
-                  style="color: #F5A00F; font-size: 20px;"></span>
-                <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"
-                  style="color: #F5A00F; font-size: 20px;"></span>
-                <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"
-                  style="color: #F5A00F; font-size: 20px;"></span>
-                <span class="iconify" data-inline="false" data-icon="ant-design:star-filled"
-                  style="color: #F5A00F; font-size: 20px;"></span>
+                <span class="iconify" data-inline="false" data-icon="bi:star-fill" style="color: #F5A00F; font-size: 20px;"></span>
+                <span class="iconify" data-inline="false" data-icon="bi:star-fill" style="color: #F5A00F; font-size: 20px;"></span>
+                <span class="iconify" data-inline="false" data-icon="bi:star-fill" style="color: #F5A00F; font-size: 20px;"></span>
+                <span class="iconify" data-inline="false" data-icon="bi:star-fill" style="color: #F5A00F; font-size: 20px;"></span>
+                <span class="iconify" data-inline="false" data-icon="bi:star-half" style="color: #F5A00F; font-size: 20px;"></span>
               </div>
               <div class="add-item"> + </div>
             </div>
