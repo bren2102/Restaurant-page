@@ -191,10 +191,9 @@ button:hover {
 .box {
   background-color: #fafafa;
   width: 100%;
-  height: 300px;
   display: flex;
   justify-content: space-between;
-  padding: 100px 100px;
+  padding: 70px 100px;
 }
 
 .box-desc {
@@ -217,9 +216,9 @@ button:hover {
 
 .wrap {
   background-color: #fafafa;
-  background-image: url(../src/background6.png);
+  background-image: url(../src/background-form.png);
   background-size: cover;
-  height: 550px;
+  height: 850px;
 }
 
 .contact {
@@ -238,12 +237,11 @@ button:hover {
 
 .form-contact {
   width: 60%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 0 100px;
+  padding: 50px 100px 0;
   color: #434343;
   text-align: center;
 }
@@ -261,6 +259,9 @@ button:hover {
   margin-right: 15px;
 }
 
+.form-name {
+  margin-top: 30px;
+}
 
 .form-contact input {
   width: 100%;

@@ -1,11 +1,11 @@
-import burgerimg from '../src/Burger.png';
+import burgerimg from './Burger.png';
 
 const renderContact = (homelink, menulink, contactlink) => {
   const content = document.querySelector('#content');
 
 
   const header = document.createElement('header');
-  const h2_header = document.createElement('h2');
+  const h2Header = document.createElement('h2');
   const ul = document.createElement('ul');
   const li1 = document.createElement('li');
   const btn = document.createElement('button');
@@ -14,7 +14,7 @@ const renderContact = (homelink, menulink, contactlink) => {
   const li4 = document.createElement('li');
 
   content.appendChild(header);
-  header.appendChild(h2_header);
+  header.appendChild(h2Header);
   header.appendChild(ul);
   ul.appendChild(li1);
   ul.appendChild(li2);
@@ -22,11 +22,14 @@ const renderContact = (homelink, menulink, contactlink) => {
   ul.appendChild(li4);
   li1.appendChild(btn);
 
-  h2_header.innerHTML = `<span class="iconify" data-inline="false" data-icon="openmoji:hamburger" style="font-size: 30px;"></span> Burgie`;
+  h2Header.innerHTML = `<span class="iconify" data-inline="false" data-icon="openmoji:hamburger" style="font-size: 30px;"></span>
+                  Burgie`;
   btn.textContent = 'Booking now';
   li2.textContent = 'Contact us';
   li3.textContent = 'Menu';
   li4.textContent = 'Home';
+
+  const wrap = document.createElement('div');
 
   const clean = () => {
     wrap.remove();
@@ -47,56 +50,49 @@ const renderContact = (homelink, menulink, contactlink) => {
   btn.style.backgroundColor = '#f5a00f';
   btn.style.color = 'white';
 
-  const wrap = document.createElement('div');
   const contact = document.createElement('div');
-  const left_contact = document.createElement('div');
-  const form_contact = document.createElement('div');
+  const leftContact = document.createElement('div');
+  const formContact = document.createElement('div');
 
   content.appendChild(wrap);
   wrap.appendChild(header);
   wrap.appendChild(contact);
-  contact.appendChild(left_contact);
-  contact.appendChild(form_contact);
+  contact.appendChild(leftContact);
+  contact.appendChild(formContact);
 
   wrap.classList = 'wrap';
   contact.classList = 'contact';
-  left_contact.classList = 'left-contact';
-  form_contact.classList = 'form-contact';
+  leftContact.classList = 'left-contact';
+  formContact.classList = 'form-contact';
 
-  const img_form = document.createElement('img');
-  const h2_form = document.createElement('h2');
-  const form_name = document.createElement('div');
-  const form_email = document.createElement('div');
-  const form_text = document.createElement('div');
-  const button_form = document.createElement('button');
+  const imgForm = document.createElement('img');
+  const h2Form = document.createElement('h2');
+  const formName = document.createElement('div');
+  const formEmail = document.createElement('div');
+  const formText = document.createElement('div');
+  const buttonForm = document.createElement('button');
 
-  left_contact.appendChild(img_form);
-  form_contact.appendChild(h2_form);
-  form_contact.appendChild(form_name);
-  form_contact.appendChild(form_email);
-  form_contact.appendChild(form_text);
-  form_contact.appendChild(button_form);
-  
-  form_name.classList = 'form-name';
-  form_email.classList = 'form-email';
-  form_text.classList = 'form-text';
-  
-  h2_form.textContent = 'Type your message here:';
-  button_form.textContent = 'Send Now';
-  img_form.src = burgerimg;
+  leftContact.appendChild(imgForm);
+  formContact.appendChild(h2Form);
+  formContact.appendChild(formName);
+  formContact.appendChild(formEmail);
+  formContact.appendChild(formText);
+  formContact.appendChild(buttonForm);
 
-  
+  formName.classList = 'form-name';
+  formEmail.classList = 'form-email';
+  formText.classList = 'form-text';
 
-  form_name.innerHTML = `<span>Name: </span>
+  h2Form.textContent = 'Type your message here:';
+  buttonForm.textContent = 'Send Now';
+  imgForm.src = burgerimg;
+
+  formName.innerHTML = `<span>Name: </span>
           <input type="text">`;
-  form_email.innerHTML = ` <span>E-mail: </span>
+  formEmail.innerHTML = ` <span>E-mail: </span>
           <input type="text">`;
-  form_text.innerHTML = `<span>Message: </span>
+  formText.innerHTML = `<span>Message: </span>
           <input type="text">`;
-  
-  
-
-  
-}
+};
 
 export default (renderContact);
