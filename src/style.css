@@ -112,7 +112,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   color: #434343;
-  padding: 0 200px 50px ;
+  padding: 0 100px 50px ;
   align-items: center;
 }
 
@@ -226,13 +226,14 @@ button:hover {
 }
 
 .left-contact img {
-  width: 100%;
+  width: 75%;
 }
 
 .left-contact {
   width: 40%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .form-contact {
