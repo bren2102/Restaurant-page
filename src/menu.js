@@ -1,9 +1,9 @@
-import burger2 from './burger2.png';
-import burger3 from './burger3.png';
-import burger4 from './burger4.png';
-import burger5 from './burger5.png';
-import burger6 from './burger6.png';
-import burger7 from './burger7.png';
+import burger2 from './assets/burger2.png';
+import burger3 from './assets/burger3.png';
+import burger4 from './assets/burger4.png';
+import burger5 from './assets/burger5.png';
+import burger6 from './assets/burger6.png';
+import burger7 from './assets/burger7.png';
 
 const renderMenu = (homelink, menulink, contactlink) => {
   const content = document.querySelector('#content');

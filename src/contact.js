@@ -1,4 +1,4 @@
-import burgerimg from './Burger.png';
+import burgerimg from './assets/Burger.png';
 
 const renderContact = (homelink, menulink, contactlink) => {
   const content = document.querySelector('#content');

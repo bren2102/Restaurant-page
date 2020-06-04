@@ -104,7 +104,7 @@ button:hover {
 }
 
 .wraptop {
-  background-image: url(../src/background6.png);
+  background-image: url(../src/assets/background6.png);
   background-size: cover;
 }
 
@@ -216,7 +216,7 @@ button:hover {
 
 .wrap {
   background-color: #fafafa;
-  background-image: url(../src/background-form.png);
+  background-image: url(../src/assets/background-form.png);
   background-size: cover;
   height: 850px;
 }

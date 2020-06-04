@@ -20,6 +20,10 @@
 - Twitter: [@BrendaYucra2](https://twitter.com/BrendaYucra)
 - Linkedin: [Brenda Yucra](https://www.linkedin.com/in/brenda-yucra-51980681/)
 
+## Credits
+
+Work based on this [this](https://www.behance.net/gallery/96647171/Foodie-Landing-Page?tracking_source=search_projects_recommended%7Crestaurant%20page) design.
+
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
