@@ -1,0 +1,288 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafa;
+}
+
+header {
+  padding: 20px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+header li {
+  margin-left: 60px;
+}
+
+header li:hover {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+header button {
+  color: #f5a00f;
+  background-color: white;
+  border-radius: 35px;
+  border: none;
+  padding: 15px;
+}
+
+header h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.left {
+  width: 45%;
+  padding: 50px 80px 50px 100px;
+  color: #434343;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.left h2 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.left span {
+  font-size: 20px;
+}
+
+.left button {
+  background-color: #f5a00f;
+  color: white;
+  font-size: 20px;
+  border-radius: 35px;
+  border: none;
+  padding: 15px;
+  width: 200px;
+  margin-top: 30px;
+}
+
+.left img {
+  width: 350px;
+  position: absolute;
+  right: 500px;
+  top: 500px;
+}
+
+.right {
+  width: 55%;
+  display: flex;
+  justify-content: center;
+}
+
+.right img {
+  width: 100%;
+}
+
+.wraptop {
+  background-image: url(../src/assets/background6.png);
+  background-size: cover;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  color: #434343;
+  padding: 0 100px 50px ;
+  align-items: center;
+}
+
+.menu-desc {
+  margin: 50px 0;
+  border-bottom: 10px #f5a00f solid;
+  padding-bottom: 20px;
+}
+
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menuitem {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  width: 22%;
+  border-top-right-radius: 50px;
+}
+
+.item-img {
+  border-top-right-radius: 50px;
+  background-color: #f5a00f;
+  border-bottom-left-radius: 50px;
+}
+
+.item-img img {
+  width: 100%;
+}
+
+.item-desc {
+  display: flex;
+  flex-direction: column;
+  height: 220px;
+  padding-top: 20px;
+  justify-content: space-between;
+  box-shadow: 11px 15px 37px -11px rgba(143, 143, 143, 0.76)
+}
+
+.menu-price {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.item-desc span {
+  padding: 10px;
+}
+
+.item-cal {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  align-items: center;
+}
+
+.add-item {
+  border-top-left-radius: 10px;
+  background-color: #f5a00f;
+  color: white;
+  width: 90px;
+  font-size: 50px;
+  height: 60px;
+  text-align: center;
+}
+
+.add-item:hover {
+  cursor: pointer;
+}
+
+.box {
+  background-color: #fafafa;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 100px;
+}
+
+.box-desc {
+  border-top-right-radius: 50px;
+  background-color: white;
+  border-bottom-left-radius: 50px;
+  box-shadow: 11px 15px 37px -11px rgba(143, 143, 143, 0.76);
+  width: 25%;
+  height: 170px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.box-desc span {
+  color: #717171;
+}
+
+.wrap {
+  background-color: #fafafa;
+  background-image: url(../src/assets/background-form.png);
+  background-size: cover;
+  height: 850px;
+}
+
+.contact {
+  display: flex;
+}
+
+.left-contact img {
+  width: 75%;
+}
+
+.left-contact {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-contact {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 100px 0;
+  color: #434343;
+  text-align: center;
+}
+
+.form-contact > * {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-contact div :first-child {
+  width: 80px;
+  text-align: left;
+  margin-right: 15px;
+}
+
+.form-name {
+  margin-top: 30px;
+}
+
+.form-contact input {
+  width: 100%;
+  margin: 15px 0;
+  border: 1px solid #434343da;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.form-text input {
+  height: 350px;
+}
+
+.contact button {
+  background-color: #f5a00f;
+  color: white;
+  font-size: 20px;
+  border-radius: 35px;
+  border: none;
+  padding: 15px;
+  width: 300px;
+  margin-top: 30px;
+}
