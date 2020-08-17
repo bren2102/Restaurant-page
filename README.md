@@ -1,6 +1,6 @@
 # Restaurant Page
 
-> Javascript application using ES6 and webpack. In this app you use what you’ve learned and take a chance to continue practicing DOM manipulation by dynamically rendering a simple restaurant homepage. By the end, you are going to be using JavaScript alone to generate the entire contents of the website.
+Javascript application using ES6 and webpack. In this app, you use what you’ve learned and taken a chance to continue practicing DOM manipulation by dynamically rendering a simple restaurant homepage. By the end, you are going to be using JavaScript alone to generate the entire contents of the website.he website.
 
 ## Built With
 
