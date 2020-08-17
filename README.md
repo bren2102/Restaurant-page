@@ -8,6 +8,12 @@
 - HTML
 - CSS
 
+## Preview
+
+![Home](./src/assets/homescreen.JPG)
+![Menu](./src/assets/menuscreen.JPG)
+![Menu](./src/assets/contactscreen.JPG)
+
 ## Live Demo
 
 [Live Demo Version](https://raw.githack.com/bren2102/Restaurant-page/feature/dist/index.html)
